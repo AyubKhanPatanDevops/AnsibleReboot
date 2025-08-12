@@ -1,4 +1,4 @@
-- name: ping the server
+- name: pingtheserver
   hosts: web
   tasks: #list of tasks and modules or collections
   - name: ping the server
