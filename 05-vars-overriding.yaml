@@ -1,0 +1,16 @@
+- name: varibles
+  hosts: localhost
+  vars: #varible declarion 
+   course: "Terrafrom"
+   Trainer: "Ayubkkhan"
+   Duration: "3months"
+  tasks:
+  - name: print override information
+    vars: #Task leel varibles
+     course: "Devops"
+    ansible.builtin.debug:
+     msg: "Hi wea re learning {{course}}from {{Trainer}} {{Duration}}."
+  - name: print infromation 
+    ansible.builtin.debug:
+      msg: "Hi wea re learning {{course}}from {{Trainer}} {{Duration}}."
+  
